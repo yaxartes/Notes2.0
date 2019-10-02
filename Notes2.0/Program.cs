@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Notes2._0
+namespace Notes2
 {
     class Program
     {

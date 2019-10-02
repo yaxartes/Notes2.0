@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Notes2._0
+namespace Notes2
 {
     public class FormDelete : Form
     {

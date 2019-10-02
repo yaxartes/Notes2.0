@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Notes2._0
+namespace Notes2
 {
     class FormFactory
     {

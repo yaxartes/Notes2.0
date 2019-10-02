@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace Notes2._0
+namespace Notes2
 
 {
     public class Note
