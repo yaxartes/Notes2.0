@@ -7,7 +7,7 @@ namespace Notes2
     {
         public static List<Note> allNotes = new List<Note>();
         public static FormFactory formFactory = new FormFactory();
-        public static INoteRepository notes = new NoteRepository();
+        public static INoteService notes = new NoteService();
 
         static void Main(string[] args)
         {

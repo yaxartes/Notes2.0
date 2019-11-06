@@ -8,21 +8,21 @@ namespace Notes2
 {
     public class Note
     {
-        private int id;
+        private Guid id;
         private string title;
         private string text;
         public static List<Note> allNotes = new List<Note>() { };
 
         public static int notesCount;
-        public int Id { get => id; }
-        public string Title { get => title; set => title = value; }
-        public string Text { get => text; set => text = value; }
+        public Guid Id { get => id; }
+        public string Title { get; set; }
+        public string Text { get; set; }
 
         public Note(string title, string text)
         {
-            this.Title = title;
-            this.Text = text;
-            this.id = Interlocked.Increment(ref notesCount);
+            Title = title;
+            Text = text;
+            id = Guid.NewGuid();
         }
     }
 }

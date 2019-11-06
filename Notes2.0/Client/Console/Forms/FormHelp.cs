@@ -6,7 +6,6 @@ namespace Notes2
     {
         public FormHelp()
         {
-            Console.WriteLine(Header);
             Console.WriteLine("Commands Help");
             Console.WriteLine("1 - Add note");
             Console.WriteLine("2 - List of notes");

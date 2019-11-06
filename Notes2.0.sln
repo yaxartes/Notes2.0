@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notes2.0", "Notes2.0\Notes2.0.csproj", "{8B1202FD-441E-4C55-96D6-6AB331831D46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesTests", "NotesTests\NotesTests.csproj", "{FFB31F0B-34E4-4E4A-A721-9FAFD4414DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotesTests", "NotesTests\NotesTests.csproj", "{FFB31F0B-34E4-4E4A-A721-9FAFD4414DBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D88FB06-8604-4ADB-BCAA-1233FE1A4A64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1FAFE617-2D0D-49E4-A275-649DF5093C46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B1202FD-441E-4C55-96D6-6AB331831D46} = {8D88FB06-8604-4ADB-BCAA-1233FE1A4A64}
+		{FFB31F0B-34E4-4E4A-A721-9FAFD4414DBF} = {1FAFE617-2D0D-49E4-A275-649DF5093C46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2901958A-8FA9-4A82-B020-F898662055B2}

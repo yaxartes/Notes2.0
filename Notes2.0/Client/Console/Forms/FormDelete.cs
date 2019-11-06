@@ -6,12 +6,10 @@ namespace Notes2
     {
         public FormDelete()
         {
-            Console.WriteLine(Header);
             Console.Write("Enter note ID: ");
             string printId = Console.ReadLine();
-            int noteId = Convert.ToInt32(printId);
+            Guid noteId = Guid.Parse(printId);
 
-            NoteRepository noteRepository = new NoteRepository();
             noteRepository.DeleteNote(noteId);
 
             GoStart("delete");

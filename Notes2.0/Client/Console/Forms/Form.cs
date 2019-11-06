@@ -6,10 +6,16 @@ namespace Notes2
 {
     public class Form
     {
-        private string header = "################################################################\n" + "Notes App v1.0\r" + "################################################################\n";
+        private string header = "################################################################\n" + "Notes App v1.0\n" + "################################################################\n";
+        protected static INoteService noteRepository = new NoteService();
         public string Header
         {
             get => header;
+        }
+        
+        public Form()
+        {
+            Console.WriteLine(Header);
         }
 
         public void GoStart(string action)

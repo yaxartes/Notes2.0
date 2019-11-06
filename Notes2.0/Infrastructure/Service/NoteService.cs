@@ -4,12 +4,11 @@ using System.Text;
 
 namespace Notes2
 {
-    class NoteRepository : INoteRepository
+    public class NoteService : INoteService
     {
-        private Dictionary<int, Note> notesList = new Dictionary<int, Note>();
-        public int GlobaNotelId { get; set; }
+        private Dictionary<Guid, Note> notesList = new Dictionary<Guid, Note>();
 
-        public Dictionary<int, Note> NotesList
+        public Dictionary<Guid, Note> NotesList
         {
             get
             {
@@ -20,28 +19,27 @@ namespace Notes2
         public void AddNote(string title, string text)
         {
             Note note = new Note(title, text);
-            GlobaNotelId++;
-            NotesList.Add(GlobaNotelId, note);
+            NotesList.Add(note.Id, note);
         }
 
-        public void DeleteNote(int id)
+        public void DeleteNote(Guid id)
         {
             NotesList.Remove(id);
         }
 
-        public void EditNote(int id, string title, string text)
+        public void EditNote(Guid id, string title, string text)
         {
             Note note = GetNoteById(id);
             note.Title = title;
             note.Text = text;
         }
 
-        public Dictionary<int, Note> GetAllNotes()
+        public Dictionary<Guid, Note> GetAllNotes()
         {
             return NotesList;
         }
 
-        public Note GetNoteById(int id)
+        public Note GetNoteById(Guid id)
         {
             return NotesList[id];
         }
